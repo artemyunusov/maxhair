@@ -2,26 +2,20 @@ $('.product-slider').slick({
   slidesToShow: 4,
   arrows: false,
   dots: false,
-  // responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 3
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 1
-  //     }
-  //   }
-  // ]
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
 });
 
 $('.review-slider').slick({
@@ -29,24 +23,20 @@ $('.review-slider').slick({
   arrows: false,
   dots: false,
   centerMode: true,
-  // responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 3
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 1
-  //     }
-  //   }
-  // ]
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        centerMode: false,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        centerMode: false,
+        slidesToShow: 1
+      }
+    }
+  ]
 });

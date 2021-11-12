@@ -11,6 +11,22 @@
 	<link rel="stylesheet" href="assets/styles/critical.min.css">
 </head>
 
+<style>
+
+  .burger,
+  .nav-mob,
+  .modal,
+  .mask,
+  .oh{
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    cursor: pointer;
+  }
+  
+</style>
+
 <body>
 
   <header class="header">
@@ -65,22 +81,21 @@
           </div>
           <div class="header-btn">
             <div class="header-lang">
-              <a href="#" class="header-lang-item">
-                <picture>
-                  <source type="image/webp" srcset="assets/images/uzb.webp">
-                  <img src="assets/images/uzb.png" alt="product-1" width="20" height="20">
-                </picture>
-              </a>
-              <a href="#" class="header-lang-item">
-                <picture>
-                  <source type="image/webp" srcset="assets/images/rus.webp">
-                  <img src="assets/images/rus.png" alt="product-1" width="20" height="20">
-                </picture>
-              </a>
+              <div class="header-lang-wrap">
+                <a href="#" class="active">
+                  Ru
+                </a>
+                <a href="#">
+                  Uz
+                </a>
+              </div>
             </div>
             <div class="header-call">
               <a href="tel:998974489700">
-                +998 97 448 97 00
+                <picture>
+                  <source type="image/webp" srcset="assets/images/call.webp">
+                  <img src="assets/images/call.png" alt="product-1" width="36" height="36">
+                </picture>
               </a>
             </div>
           </div>
@@ -426,7 +441,88 @@
       </g>
     </symbol>
   </svg>
-	
+  <div class="modal">
+    <div class="modal-wrap">
+      <div class="modal-content">
+        <div class="modal-title">
+          <h3>
+            Заполните форму
+          </h3>
+        </div>
+        <div class="modal-text">
+          <p>
+            Наши операторы обязательно с вами свяжутся.
+          </p>
+        </div>
+      </div>
+      <form action="" class="modal-form">
+        <input type="text" class="modal-input" placeholder="Ваша имя">
+        <input type="text" class="modal-input" placeholder="Ваш номер телефона">
+        <input type="submit" class="modal-submit" placeholder="Заказать">
+      </form>
+      <div class="modal-close">
+        <div class="modal-icon modal-icon-1"></div>
+        <div class="modal-icon modal-icon-2"></div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+
+  <div class="mask"></div>  
+
+  <div class="burger">
+    <div class="burger-icon">
+      <div class="burger-icon-wrap">
+        <span class="burger-icon-item burger-icon-item-1"></span>
+        <span class="burger-icon-item burger-icon-item-2"></span>
+        <span class="burger-icon-item burger-icon-item-3"></span>
+      </div>
+    </div>
+  </div>
+  <!-- burger -->
+  
+  <div class="nav-mob">
+  
+    <nav class="nav-fixed">
+      <ul class="nav-fixed-list">
+        <li class="nav-fixed-item">
+          <a class="nav-fixed-link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="nav-fixed-item">
+          <a class="nav-fixed-link" href="#about">
+            о нас
+          </a>
+        </li>
+        <li class="nav-fixed-item">
+          <a class="nav-fixed-link" href="#services">
+            сервисы
+          </a>
+        </li>
+        <li class="nav-fixed-item">
+          <a class="nav-fixed-link" href="#portfolio">
+            проекты
+          </a>
+        </li>
+        <li class="nav-fixed-item">
+          <a class="nav-fixed-link" href="#contacts">
+            контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- nav-mob -->
+  
+  <div class="to-top">
+    <div class="to-top-wrap">
+      <span class="to-top-item to-top-item-1"></span>
+      <span class="to-top-item to-top-item-2"></span>
+    </div>
+  </div>
+  <!-- to-top -->
+
 	<script>
 
 		function loadStyle(url){
@@ -456,6 +552,9 @@
   <!-- custom -->
 
   <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/burger.js"></script>
+  <script src="./assets/js/to-top.js"></script>
+  <script src="./assets/js/main.js"></script>
 
   <!-- custom -->
 
