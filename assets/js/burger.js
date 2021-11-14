@@ -1,15 +1,15 @@
-// $(".burger").click(function () {
-//   $(this).toggleClass('burger-clicked');
-//   $('.mask').toggleClass('mob-active');
-//   $('.nav-mob').toggleClass('mob-active');
-//   $(document.body).toggleClass('oh');
-// });
+$(".burger").click(function () {
+  $(this).toggleClass('burger-clicked');
+  $('.mask').toggleClass('mob-active');
+  $('.nav-mob').toggleClass('mob-active');
+  $(document.body).toggleClass('oh');
+});
 
-// let mask = document.querySelector('.body-mask');
-// let burger = document.querySelector('.burger');
-// let nav = document.querySelector('.nav-mob');
-// let menuFixed = document.querySelector('.nav-fixed');
-// let menu = document.querySelector('.nav');
+let mask = document.querySelector('.mask');
+let burger = document.querySelector('.burger');
+let nav = document.querySelector('.nav-mob');
+let menuFixed = document.querySelector('.nav-fixed');
+let menu = document.querySelector('.nav');
 // let links = document.querySelectorAll('.nav-link');
 // let mobLinks = document.querySelectorAll('.nav-fixed-link');
 // let introBtn = document.querySelectorAll('.slider-btn a');
@@ -86,6 +86,7 @@ function scrollToTarget(id){
 }
 
 
+
 // mediaBtn.addEventListener('click', function(e){
 //   e.preventDefault();
 //   scrollToTarget(mediaBtn.hash);
@@ -103,3 +104,18 @@ function scrollToTarget(id){
 //     mobSubTarget.classList.toggle('sub-menu-show');
 //   }
 // })
+
+$(function(){
+
+  $('.faq .faq-text:first').show();
+
+  $('.faq .faq-title').on('click', function(){
+    $('.faq-title').removeClass('active');
+    $(this).addClass('active');
+    let answer = $(this).next();
+    
+    $('.faq .faq-text:visible').not(answer).slideUp(400);
+    answer.slideDown(400);
+  });
+  
+});

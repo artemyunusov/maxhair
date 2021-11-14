@@ -55,8 +55,7 @@
   .burger,
   .nav-mob,
   .modal,
-  .mask,
-  .oh{
+  .mask{
 
     opacity: 0;
     visibility: hidden;
@@ -64,6 +63,15 @@
     cursor: pointer;
   }
   
+  /* .modal,
+  .mask{
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    cursor: pointer;
+  } */
+
 </style>
 
 <body>
@@ -86,32 +94,32 @@
             <nav class="nav">
               <ul class="nav-list">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./index.html" class="nav-link-2">
                     Главная
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#product" class="nav-link">
                     Продукты
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#about" class="nav-link">
                     О Продукте
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#review" class="nav-link">
                     Отзыв
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#certificate" class="nav-link">
                     Сертификаты
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#contact" class="nav-link">
                     Контакты
                   </a>
                 </li>
@@ -121,10 +129,10 @@
           <div class="header-btn">
             <div class="header-lang">
               <div class="header-lang-wrap">
-                <a href="#" class="active">
+                <a href="./index.html" class="active">
                   Ru
                 </a>
-                <a href="#">
+                <a href="./index.html">
                   Uz
                 </a>
               </div>
@@ -380,7 +388,7 @@
 	<!-- product -->
 	
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <div class="footer-wrap">
         <div class="footer-row">
@@ -401,7 +409,7 @@
               </p>
               <div class="footer-social-row">
                 <div class="footer-social-item">
-                  <a href="#">
+                  <a href="https://t.me/artemyunusovme" target="blank">
                     <svg class="svg" width="24" height="21">
                       <use xlink:href="#tme">
                       </use>
@@ -409,7 +417,7 @@
                   </a>
                 </div>
                 <div class="footer-social-item">
-                  <a href="#">
+                  <a href="https://t.me/artemyunusovme" target="blank">
                     <svg class="svg" width="11" height="23">
                       <use xlink:href="#fb">
                       </use>
@@ -417,7 +425,7 @@
                   </a>
                 </div>
                 <div class="footer-social-item">
-                  <a href="#">
+                  <a href="https://t.me/artemyunusovme" target="blank">
                     <svg class="svg" width="23" height="23">
                       <use xlink:href="#insta">
                       </use>
@@ -429,14 +437,14 @@
           </div>
           <div class="footer-block">
             <div class="footer-call">
-              <div class="footer-call-icon">
+              <a href="tel:998974489700" class="footer-call-icon">
                 <picture>
                 <source type="image/webp" srcset="assets/images/call.webp">
                 <img src="assets/images/call.png" alt="product-1" width="36" height="36">
               </picture>
-            </div>
+            </a>
               <div class="footer-call-content">
-                <a href="#" class="footer-call-num">
+                <a href="tel:998974489700" class="footer-call-num">
                   +998 (55) 503-77-78
                 </a>
                 <span class="footer-call-span">
@@ -525,27 +533,32 @@
     <nav class="nav-fixed">
       <ul class="nav-fixed-list">
         <li class="nav-fixed-item">
-          <a class="nav-fixed-link" href="#">
+          <a class="nav-fixed-link-2" href="./index.html">
             Главная
           </a>
         </li>
         <li class="nav-fixed-item">
+          <a class="nav-fixed-link" href="#product">
+            Продукты
+          </a>
+        </li>
+        <li class="nav-fixed-item">
           <a class="nav-fixed-link" href="#about">
-            о нас
+            О Продукте
           </a>
         </li>
         <li class="nav-fixed-item">
-          <a class="nav-fixed-link" href="#services">
-            сервисы
+          <a class="nav-fixed-link" href="#review">
+            Отзыв
           </a>
         </li>
         <li class="nav-fixed-item">
-          <a class="nav-fixed-link" href="#portfolio">
-            проекты
+          <a class="nav-fixed-link" href="#certificate">
+            Сертификаты
           </a>
         </li>
         <li class="nav-fixed-item">
-          <a class="nav-fixed-link" href="#contacts">
+          <a class="nav-fixed-link" href="#contact">
             контакты
           </a>
         </li>
