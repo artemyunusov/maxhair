@@ -12,6 +12,45 @@
 </head>
 
 <style>
+  
+  .anim-load{
+    box-shadow: 0 0 0 0 #cb342b;
+    animation: pulse-red 1s infinite;
+  }
+
+  @keyframes pulse-red {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 
+      rgba(203, 52, 43, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px 
+      rgba(203, 52, 43, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 
+      rgba(203, 52, 43, 0);
+    }
+  }
+</style>
+
+<div class="load" style="width: 100vw; height: 100vh; position: fixed; display: flex; align-items: center; justify-content: center; background-color: aliceblue; z-index: 99999;">
+  <div class="load-elem anim-load" style="width: 50px; height: 50px; background-color: aqua; border-radius: 50%;"></div>
+</div>
+
+<script>
+  let load = document.querySelector('.load');
+  document.addEventListener("DOMContentLoaded", function(event) {
+
+    load.style.display = "none";
+
+  });
+</script>
+
+<style>
 
   .burger,
   .nav-mob,
