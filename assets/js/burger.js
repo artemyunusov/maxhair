@@ -6,6 +6,10 @@ $(".burger").click(function () {
 });
 
 let mask = document.querySelector('.mask');
+let modalShow = document.querySelector('.intro-btn');
+let modalShow2 = document.querySelector('.single-btn');
+let modal = document.querySelector('.modal');
+let modalClose = document.querySelector('.modal-close');
 let burger = document.querySelector('.burger');
 let nav = document.querySelector('.nav-mob');
 let menuFixed = document.querySelector('.nav-fixed');
@@ -119,3 +123,36 @@ $(function(){
   });
   
 });
+
+$(function(){
+
+  $('.single-more').on('click', function(){
+
+    let answer = $('.single-text');
+    answer.slideToggle(400);
+  });
+  
+});
+
+modalShow.addEventListener('click', function(e){
+  e.preventDefault();
+
+  modal.classList.add('modal-show');
+  mask.classList.add('mob-active');
+
+})
+
+modalClose.addEventListener('click', function(){
+  
+  modal.classList.remove('modal-show');
+  mask.classList.remove('mob-active');
+
+})
+
+modalShow2.addEventListener('click', function(e){
+  e.preventDefault();
+
+  modal.classList.add('modal-show');
+  mask.classList.add('mob-active');
+
+})

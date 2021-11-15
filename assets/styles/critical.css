@@ -105,6 +105,12 @@ p {
   line-height: 1.2;
 }
 
+.modal-show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
 .header {
   z-index: 999;
   position: absolute;
@@ -480,5 +486,314 @@ p {
     -webkit-transform: scale(0.95);
             transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(203, 52, 43, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .header-btn {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header-lang {
+    margin: 0;
+    margin-top: 30px;
+    order: 1;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .intro {
+    height: 600px;
+    background-image: url("../images/intro-bg.webp");
+    background-repeat: no-repeat;
+    background-position: 120%;
+    background-size: 50%;
+  }
+
+  .intro-content {
+    padding-bottom: 40px;
+    justify-content: flex-end;
+    width: 60%;
+  }
+
+  .intro-slider {
+    display: none;
+  }
+
+  .intro-title h2 {
+    font-size: 45px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .burger {
+    left: 30px;
+  }
+
+  .header-btn {
+    right: 30px;
+  }
+
+  .recipe-d .recipe-left img {
+    max-width: 75%;
+  }
+
+  .recipe-d .recipe-right {
+    flex-grow: 1;
+    margin-left: 0;
+  }
+
+  .recipe-n .recipe-left img {
+    max-width: 75%;
+    margin-left: auto;
+  }
+
+  .recipe-n .recipe-right {
+    flex-grow: 1;
+    margin-right: 0;
+  }
+
+  .doc-wrap {
+    display: block;
+  }
+
+  .doc-item {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .services-wrap {
+    padding: 0;
+    display: block;
+  }
+
+  .services-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .services-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .form {
+    background-image: url("../images/intro-bg.webp");
+    background-size: 50%;
+    background-position: 120%;
+  }
+
+  .form-content {
+    width: 70%;
+  }
+
+  .footer-row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-social-descr {
+    text-align: left;
+  }
+
+  .footer-social-row {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-slide {
+    margin: 0 5px;
+  }
+
+  .slick-list {
+    margin: 0 -5px;
+  }
+
+  .burger {
+    left: 20px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .item-wrap {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .intro {
+    height: 100vh;
+    background-image: none;
+  }
+
+  .intro-content {
+    padding-bottom: 50px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .intro-title {
+    margin-bottom: 30px;
+  }
+
+  .intro-title h2 {
+    font-size: 36px;
+  }
+
+  .about-wrap {
+    display: block;
+  }
+
+  .about-left,
+  .about-right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .recipe-d,
+  .recipe-n {
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .recipe-d .recipe-left,
+  .recipe-d .recipe-right,
+  .recipe-n .recipe-left,
+  .recipe-n .recipe-right {
+    border-radius: 0;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .recipe-d .recipe-left,
+  .recipe-n .recipe-left {
+    margin-bottom: 20px;
+  }
+
+  .services-wrap {
+    padding: 20px 0;
+  }
+
+  .services-item-img img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .doc-item {
+    border-radius: 0;
+  }
+
+  .doc-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .doc-item-wrap {
+    padding: 15px;
+    display: block;
+  }
+
+  .doc-img {
+    flex-shrink: 0;
+  }
+
+  .doc-left,
+  .doc-right {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0;
+  }
+
+  .doc-right {
+    margin-bottom: 0;
+  }
+
+  .certificate-wrap {
+    display: block;
+  }
+
+  .certificate-img {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .certificate-img img {
+    margin: 0 auto;
+  }
+
+  .certificate-img:last-child {
+    margin-bottom: 0;
+  }
+
+  .form {
+    background-image: none;
+  }
+
+  .form-content {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .form-text {
+    padding: 0;
+  }
+
+  .form-form {
+    width: 100%;
+  }
+
+  .form-form input {
+    padding: 20px;
+  }
+
+  .form-form .form-submit {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .footer-block {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .footer-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-fixed-item {
+    margin-bottom: 2rem;
+  }
+
+  .nav-fixed-link {
+    font-size: 18px;
+  }
+
+  .nav-fixed-link-2 {
+    font-size: 18px;
   }
 }
