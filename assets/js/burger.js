@@ -6,8 +6,10 @@ $(".burger").click(function () {
 });
 
 let mask = document.querySelector('.mask');
-let modalShow = document.querySelector('.intro-btn');
-let modalShow2 = document.querySelector('.single-btn');
+let modalShow1 = document.querySelector('.intro-btn-1');
+let modalShow2 = document.querySelector('.intro-btn-2');
+let modalShow3 = document.querySelector('.intro-btn-3');
+let modalShow4 = document.querySelector('.single-btn');
 let modal = document.querySelector('.modal');
 let modalClose = document.querySelector('.modal-close');
 let burger = document.querySelector('.burger');
@@ -134,7 +136,23 @@ $(function(){
   
 });
 
-modalShow.addEventListener('click', function(e){
+modalShow1.addEventListener('click', function(e){
+  e.preventDefault();
+
+  modal.classList.add('modal-show');
+  mask.classList.add('mob-active');
+
+})
+
+modalShow2.addEventListener('click', function(e){
+  e.preventDefault();
+
+  modal.classList.add('modal-show');
+  mask.classList.add('mob-active');
+
+})
+
+modalShow3.addEventListener('click', function(e){
   e.preventDefault();
 
   modal.classList.add('modal-show');
@@ -149,7 +167,7 @@ modalClose.addEventListener('click', function(){
 
 })
 
-modalShow2.addEventListener('click', function(e){
+modalShow4.addEventListener('click', function(e){
   e.preventDefault();
 
   modal.classList.add('modal-show');

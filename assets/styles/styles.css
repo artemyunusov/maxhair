@@ -1,15 +1,15 @@
 .slick-slide {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .slick-list {
-  margin: 0 -10px;
+  margin: 0 -20px;
 }
 
 .item-wrap {
   position: relative;
   height: 100%;
-  padding: 24px 30px 30px;
+  padding: 20px 40px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,14 +42,20 @@
 }
 
 .item-top {
-  margin-bottom: 18px;
+  margin-top: auto;
 }
 
 .item-mid {
+  margin-top: 30px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .item-mid p {
+  height: 100%;
+  margin-top: auto;
   font-size: 14px;
   font-weight: 400;
   color: #8A8A8A;
@@ -58,7 +64,6 @@
 }
 
 .item-low {
-  margin-top: auto;
   width: 100%;
   height: 30px;
   display: flex;
@@ -139,6 +144,12 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: justify;
+}
+
+.about {
+  margin: -50px 0;
+  padding: 50px 0;
+  background-color: #eee;
 }
 
 .about-wrap {
@@ -278,7 +289,7 @@
 }
 
 .services {
-  background-color: #fdfff6;
+  background-color: #eee;
 }
 
 .services-wrap {
@@ -362,6 +373,12 @@
   width: 250px;
   height: 250px;
   background-color: #a2c249;
+}
+
+.certificate {
+  margin: -50px 0;
+  padding: 50px 0;
+  background-color: #eee;
 }
 
 .certificate-wrap {
@@ -451,7 +468,7 @@
 }
 
 .footer {
-  background-color: rgba(241, 241, 241, 0.5);
+  background-color: #eee;
 }
 
 .footer-wrap {
@@ -937,9 +954,8 @@ section {
 }
 
 @media (max-width: 1380px) {
-  .intro-slider-item img {
-    margin-left: auto;
-    max-width: 88%;
+  .intro-slider-1 {
+    margin-top: 200px;
   }
 }
 
@@ -981,8 +997,10 @@ section {
     padding-top: 0;
   }
 
-  .intro-slider-item img {
-    max-width: 80%;
+  .intro-slider {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-center {
@@ -1047,7 +1065,7 @@ section {
     height: 600px;
     background-image: url("../images/intro-bg.webp");
     background-repeat: no-repeat;
-    background-position: 120%;
+    background-position: 120% 90%;
     background-size: 50%;
   }
 
@@ -1075,6 +1093,11 @@ section {
 
   .header-btn {
     right: 30px;
+  }
+
+  .item-wrap {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .recipe-d .recipe-left img {
@@ -1198,12 +1221,13 @@ section {
   }
 
   .intro {
-    height: 100vh;
+    height: 600px;
     background-image: none;
   }
 
   .intro-content {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    padding-left: 20px;
     width: 100%;
     justify-content: flex-end;
   }

@@ -40,3 +40,23 @@ $('.review-slider').slick({
     }
   ]
 });
+
+$('.intro-slide').slick({
+  slidesToShow: 1,
+  arrows: false,
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
