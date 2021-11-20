@@ -941,6 +941,17 @@
   visibility: visible;
 }
 
+.tube {
+  background-color: #eee;
+}
+
+.tube-wrap {
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .slick-track {
   display: flex !important;
 }
